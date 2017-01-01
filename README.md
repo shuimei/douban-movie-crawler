@@ -5,7 +5,7 @@ If you are intersted in data visualization, you can fetch this and have some ana
 ## settings.py
 settings.py contains a dict which stores movie page numbers of year from 1880 to 2015 on douban site.
 ## DoubanMovieCrawler.py
-DoubanMovieCrawler.py read `movie_pages` in settings.py and make requests to get movie name and its link, then write to a csv file named "".
+DoubanMovieCrawler.py read `movie_pages` in settings.py and make requests to get movie name and its link, then write to a csv file named "%year%_douban_movies.csv".
 ## MovieRequests.py
 this script reads file "douban_movie_by_year.csv" and make requests to fetch douban movie info. using xpath I find useful information.
 a douban movie information I get from a movie item page contains:
